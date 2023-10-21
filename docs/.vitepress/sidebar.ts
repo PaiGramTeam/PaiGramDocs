@@ -23,6 +23,7 @@ export default {
       collapsed: true,
       items: [
         { text: '关于 Service', link: '/advanced/service' },
+        { text: '关于 sqlmodel', link: '/advanced/sqlmodel' },
       ],
     },
   ],
