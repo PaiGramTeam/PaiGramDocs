@@ -90,6 +90,11 @@ contributors: ["luoshuijs", "zhxycn"]
            await update.effective_chat.send_message('hello world!')
    ```
 
+<ChatPanel title="Telegram">
+<ChatMessage nickname="User">/start</ChatMessage>
+<ChatMessage nickname="GrambBot">hello world!</ChatMessage>
+</ChatPanel>
+
 ### 对于 `ConversationHandler`
 
 由于 `ConversationHandler` 比较特殊，所以**一个 Plugin 类中只能存在一个 `ConversationHandler`**
@@ -112,11 +117,14 @@ class TestConversation(Plugin.Conversation, allow_reentry=True, block=False):
     @handler.command(command='entry')
     async def entry_point(self, update: Update, context: CallbackContext):
         """do something"""
+        await update.effective_chat.send_message('hello')
+        return STATE_A
 
     @conversation.state(state=STATE_A)
     @handler.message(filters=filters.TEXT)
     async def state(self, update: Update, context: CallbackContext):
         """do something"""
+        await update.effective_chat.send_message('world!')
 
     @conversation.fallback
     @handler.message(filters=filters.TEXT)
@@ -128,6 +136,13 @@ class TestConversation(Plugin.Conversation, allow_reentry=True, block=False):
         """do something"""
 
 ```
+
+<ChatPanel title="Telegram">
+<ChatMessage nickname="User">/entry</ChatMessage>
+<ChatMessage nickname="GrambBot">hello</ChatMessage>
+<ChatMessage nickname="User">ok</ChatMessage>
+<ChatMessage nickname="GrambBot">world!</ChatMessage>
+</ChatPanel>
 
 ### 对于 `Job`
 

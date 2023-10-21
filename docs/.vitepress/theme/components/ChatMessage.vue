@@ -17,18 +17,18 @@ const colorMap = {
 }
 
 const avatarMap = {
-  grambot: '',
-  b: '',
+  GrambBot: '/icon_256px.jpg',
+  User: '/user.png',
 }
 
 const typeMap = {
-  grambot: 'tip',
-  b: 'danger',
+  GrambBot: 'tip',
+  User: 'danger',
 }
 
 const tagMap = {
-  grambot: '机器人',
-  b: '用户',
+  GrambBot: '机器人',
+  User: '用户',
 }
 
 const shown = ref(false)
