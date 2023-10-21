@@ -18,5 +18,12 @@ export default {
         { text: 'Podman 快速部署', link: '/docker/podman' },
       ],
     },
+    {
+      text: '📦️ Core 介绍',
+      collapsed: true,
+      items: [
+        { text: '关于 Service', link: '/advanced/service' },
+      ],
+    },
   ],
 }
