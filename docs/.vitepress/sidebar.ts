@@ -26,5 +26,13 @@ export default {
         { text: '关于 sqlmodel', link: '/advanced/sqlmodel' },
       ],
     },
+    {
+      text: '🔧 Plugin 介绍',
+      collapsed: true,
+      items: [
+        { text: '插件编写准备', link: '/plugin/start' },
+        { text: '插件写法', link: '/plugin/create' },
+      ],
+    },
   ],
 }
