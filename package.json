@@ -43,7 +43,8 @@
     "vite": "^4.4.9",
     "vite-plugin-pwa": "^0.16.5",
     "vitepress": "1.0.0-rc.20",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "workbox-window": "^7.0.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

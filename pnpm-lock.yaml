@@ -121,6 +121,9 @@ devDependencies:
   vue:
     specifier: ^3.3.4
     version: 3.3.4
+  workbox-window:
+    specifier: ^7.0.0
+    version: registry.npmmirror.com/workbox-window@7.0.0
 
 packages:
 
