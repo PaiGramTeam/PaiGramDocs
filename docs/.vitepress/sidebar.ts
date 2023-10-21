@@ -10,5 +10,13 @@ export default {
         { text: '启动项目', link: '/quick-start/run' },
       ],
     },
+    {
+      text: '👷 Docker 相关',
+      collapsed: true,
+      items: [
+        { text: 'Docker 快速部署', link: '/docker/docker' },
+        { text: 'Podman 快速部署', link: '/docker/podman' },
+      ],
+    },
   ],
 }

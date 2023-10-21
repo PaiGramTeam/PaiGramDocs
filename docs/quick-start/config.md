@@ -18,7 +18,7 @@ cp .env.example .env
 
 提供更多日志反馈和网页模板测试功能。可选参数：`true` / `false`
 
-```env
+```dotenv
 DEBUG=false
 ```
 
@@ -26,7 +26,7 @@ DEBUG=false
 
 必填。如果使用容器构建，请查阅侧栏的容器构建部分。
 
-```env
+```dotenv
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_USERNAME=user
@@ -38,7 +38,7 @@ DB_DATABASE=paimon
 
 可选。用于缓存生成图片的不必要数据。
 
-```env
+```dotenv
 REDIS_HOST=127.0.0.1
 REDIS_PORT=6379
 REDIS_DB=0
@@ -49,7 +49,7 @@ REDIS_PASSWORD=""
 
 必填。联系 [Telegram@BotFather](https://t.me/BotFather) 使用 /newbot 命令创建机器人并获取 token。
 
-```env
+```dotenv
 BOT_TOKEN="xxxxxxx"
 ```
 
@@ -57,7 +57,7 @@ BOT_TOKEN="xxxxxxx"
 
 可选。`username` 来自 Telegram 用户信息界面；`user_id` 可通过 [Telegram@IDBot](https://t.me/username_to_id_bot) 获取。
 
-```env
+```dotenv
 ADMINS=[{ "username": "", "user_id": -1 }]
 ```
 
@@ -67,7 +67,7 @@ ADMINS=[{ "username": "", "user_id": -1 }]
 
 可选。
 
-```env
+```dotenv
 ERROR_NOTIFICATION_CHAT_ID=chat_id
 ```
 
@@ -75,7 +75,7 @@ ERROR_NOTIFICATION_CHAT_ID=chat_id
 
 可选。
 
-```env
+```dotenv
 CHANNELS=[{ "name": "", "chat_id": 1}]
 ```
 
@@ -83,7 +83,7 @@ CHANNELS=[{ "name": "", "chat_id": 1}]
 
 可选。默认不允许；如果允许，可以允许全部人或有认证选项。
 
-```env
+```dotenv
 JOIN_GROUPS = "NO_ALLOW"
 ```
 
@@ -91,7 +91,7 @@ JOIN_GROUPS = "NO_ALLOW"
 
 可选。
 
-```env
+```dotenv
 VERIFY_GROUPS=[]
 ```
 
@@ -99,7 +99,7 @@ VERIFY_GROUPS=[]
 
 可选。
 
-```env
+```dotenv
 LOGGER_NAME="TGPaimon"
 # 打印时的宽度
 LOGGER_WIDTH=180
@@ -122,7 +122,7 @@ LOGGER_FILTERED_NAMES=["uvicorn","ErrorPush","ApiHelper"]
 
 可选。
 
-```env
+```dotenv
 TIMEOUT = 10
 READ_TIMEOUT = 2
 WRITE_TIMEOUT = 10
@@ -134,7 +134,7 @@ POOL_TIMEOUT = 10
 
 可选。
 
-```env
+```dotenv
 API_ID=12345
 API_HASH="abcdefg"
 ```
@@ -143,7 +143,7 @@ API_HASH="abcdefg"
 
 可选。默认无，可能会影响 `/player_card` 指令。
 
-```env
+```dotenv
 ENKA_NETWORK_API_AGENT="TGPaimonBot/3.0"
 ```
 
@@ -151,7 +151,7 @@ ENKA_NETWORK_API_AGENT="TGPaimonBot/3.0"
 
 可选。目前只用于预览模板，仅开发环境启动。
 
-```env
+```dotenv
 WEB_URL=http://localhost:8080/
 WEB_HOST=localhost
 WEB_PORT=8080
@@ -161,7 +161,7 @@ WEB_PORT=8080
 
 可选。
 
-```env
+```dotenv
 ERROR_PB_URL=https://fars.ee
 ERROR_PB_SUNSET=43200
 ERROR_PB_MAX_LINES=1000
@@ -172,7 +172,7 @@ ERROR_SENTRY_DSN=
 
 可选。会作用于 Telegram 中权限不足时的提示。
 
-```env
+```dotenv
 NOTICE_USER_MISMATCH="再乱点我叫西风骑士团、千岩军、天领奉行、三十人团和风纪官了！"
 ```
 
