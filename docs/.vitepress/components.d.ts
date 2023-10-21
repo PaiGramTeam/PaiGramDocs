@@ -12,12 +12,14 @@ declare module 'vue' {
     Card: typeof import('./theme/components/Card.vue')['default']
     ChatMessage: typeof import('./theme/components/ChatMessage.vue')['default']
     ChatPanel: typeof import('./theme/components/ChatPanel.vue')['default']
+    Contributors: typeof import('./theme/components/Contributors.vue')['default']
     CopyRight: typeof import('./theme/components/CopyRight.vue')['default']
     DataPanel: typeof import('./theme/components/DataPanel.vue')['default']
     HomeContributors: typeof import('./theme/components/HomeContributors.vue')['default']
     NavCard: typeof import('./theme/components/NavCard.vue')['default']
     'Ooui:clock': typeof import('~icons/ooui/clock')['default']
     PageInfo: typeof import('./theme/components/PageInfo.vue')['default']
+    'RadixIcons:update': typeof import('~icons/radix-icons/update')['default']
     VideoLink: typeof import('./theme/components/VideoLink.vue')['default']
   }
 }

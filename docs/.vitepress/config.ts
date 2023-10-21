@@ -4,6 +4,7 @@ import { description, docsVersion, github, keywords, name, site } from './meta'
 import { pwa } from './plugins/pwa'
 import sidebar from './sidebar'
 import socialLinks from './link'
+import algolia from './algolia'
 
 export default withPwa(defineConfig({
   pwa,
@@ -55,6 +56,7 @@ export default withPwa(defineConfig({
         ],
       },
     ],
+    algolia,
     sidebar,
     socialLinks,
   },

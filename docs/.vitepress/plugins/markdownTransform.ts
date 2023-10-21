@@ -1,4 +1,5 @@
 import type { Plugin } from 'vite'
+import { replacer } from '../../../scripts/utils'
 import { getReadingTime } from './../theme/utils'
 
 export function MarkdownTransform(): Plugin {
@@ -9,6 +10,8 @@ export function MarkdownTransform(): Plugin {
       if (!id.match(/\.md\b/))
         return null
 
+      const [_name, i] = id.split('/').slice(-2)
+
       // convert img
       const imgRegex = /!\[(.+?)\]\((.+?)\)/g
       let imgMatches = imgRegex.exec(code)
@@ -18,8 +21,11 @@ export function MarkdownTransform(): Plugin {
         imgMatches = imgRegex.exec(code)
       }
 
-      // const { footer } = await getDocsMarkdown()
-      // code = replacer(code, footer, 'FOOTER', 'tail')
+      if (_name === 'docs' && i === 'index.md')
+        return code
+
+      const { footer } = await getDocsMarkdown()
+      code = replacer(code, footer, 'FOOTER', 'tail')
       const { readTime, words } = getReadingTime(code)
 
       code = code.replace(/(#\s\S.+)/, `$1\n\n<PageInfo readTime="${readTime}" words="${words}"/>\n`)
@@ -31,5 +37,16 @@ export function MarkdownTransform(): Plugin {
 
       return code
     },
+  }
+}
+
+export async function getDocsMarkdown() {
+  const ContributorsSection = `## Contributors
+  <Contributors/>`
+
+  const footer = `${ContributorsSection}\n`
+
+  return {
+    footer,
   }
 }
