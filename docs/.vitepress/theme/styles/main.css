@@ -45,3 +45,15 @@ html.dark {
 .medium-zoom-image {
   z-index: 21;
 }
+
+.aside-curtain {
+  display: none;
+}
+
+.VPNavBar .container .content {
+  padding-right: 0!important;
+}
+
+.VPSocialLink.no-icon {
+  margin-right: 20px;
+}
