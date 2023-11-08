@@ -35,5 +35,12 @@ export default {
         { text: '调用 Telegram 接口', link: '/plugin/bot' },
       ],
     },
+    {
+      text: '🪚 PGA 介绍',
+      collapsed: true,
+      items: [
+        { text: '编译及安装', link: '/pga/build' },
+      ],
+    },
   ],
 }
