@@ -1,6 +1,6 @@
 # python-genshin-artifact 伤害计算
 
-PaiGram 通过调用 python-genshin-artifact （下文简称PGA） 模块实现角色伤害计算，该模块将 Rust 实现的 [genshin_artifact](https://github.com/wormtql/genshin_artifact) 库包装为 python 模块供 PaiGram 使用。
+PaiGram 通过调用 python-genshin-artifact (下文简称 PGA) 模块实现角色伤害计算，该模块将 Rust 实现的 [genshin_artifact](https://github.com/wormtql/genshin_artifact) 库包装为 python 模块供 PaiGram 使用。
 
 
 ## 依赖
@@ -29,7 +29,7 @@ pip install python-genshin-artifact
   ...
   ```
 
-2. 浏览至项目主目录下，用 `cargo` 编译 Rust 代码（可选步骤）
+2. 浏览至项目主目录下，用 `cargo` 编译 Rust 代码 (可选步骤)
 
   ```
   $ cd python-genshin-artifact/
@@ -61,9 +61,9 @@ pip install python-genshin-artifact
 
 ### 编译 wheel
 
-如果需要导出给其它项目测试或使用（例如 PaiGram），需要通过 `maturin` 将模块编译成 `.whl` 格式以便其它 Python 虚拟环境安装。
+如果需要导出给其它项目测试或使用 (例如 PaiGram)，需要通过 `maturin` 将模块编译成 `.whl` 格式以便其它 Python 虚拟环境安装。
 
-1. `maturin build`:
+1. `maturin build`：
 
   ```
   $ maturin build --out dist

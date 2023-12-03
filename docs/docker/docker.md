@@ -4,7 +4,7 @@ contributors: ["cworld1"]
 
 # Docker 快速部署
 
-## 1. 安装 `docker` 和 `docker-compose`
+## 1。安装 `docker` 和 `docker-compose`
 
 ```bash
 curl -fsSL https://get.docker.com | bash -s docker
@@ -20,7 +20,7 @@ docker-compose version
 > 不同系统安装命令可能略有差异，详见：[Docker Documentation](https://docs.docker.com/compose/install/)
 >
 
-## 2. 克隆本项目
+## 2。克隆本项目
 
 ::: tip
 
@@ -33,7 +33,7 @@ git clone https://github.com/PaiGramTeam/PaiGram.git
 cd PaiGram
 ```
 
-## 3. 修改配置文件
+## 3。修改配置文件
 
 ```bash
 cp .env.example .env
@@ -57,7 +57,7 @@ REDIS_PASSWORD=""
 
 以及 bot token 等参数。详见 [Env Settings](../quick-start/env)
 
-### 4. 运行
+### 4。运行
 
 ```bash
 docker-compose up -d

@@ -71,7 +71,7 @@ ADMINS=[{ "username": "", "user_id": -1 }]
 ERROR_NOTIFICATION_CHAT_ID=chat_id
 ```
 
-#### 文章推送群组 可选配置项
+#### 文章推送群组 (可选配置项)
 
 可选。
 

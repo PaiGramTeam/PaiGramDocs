@@ -6,9 +6,9 @@ contributors: ["karakoo"]
 
 ## 创建 `Service`
 
-服务 `Service` 需定义在 `services` 文件夹下, 并继承 `gram_core.base_service.BaseService`
+服务 `Service` 需定义在 `services` 文件夹下，并继承 `gram_core.base_service.BaseService`
 
-每个 `Service` 都应包含 `initialize` 和 `shutdown` 方法, 且这两个方法都为异步方法
+每个 `Service` 都应包含 `initialize` 和 `shutdown` 方法，且这两个方法都为异步方法
 
 ```python
 from gram_core.base_service import BaseService
@@ -27,13 +27,13 @@ class TestService(BaseService):
 
 ## 分类
 
-v4 的服务有三类 `Dependence(基础服务)` 、 `Component(组件)` 、 `Service(普通服务)`
+v4 的服务有三类 `Dependence(基础服务)`、`Component(组件)`、`Service(普通服务)`
 
 ### 第一类：基础服务
 
 基础服务是不需要依赖于其他任何服务和组件的服务，它会被最先初始化和运行
 
-拥有异步方法 initialize 和 shutdown 来管理它的生命周期（后续可能会加入 heartbeat 方法来保持基础服务的一些功能）
+拥有异步方法 initialize 和 shutdown 来管理它的生命周期 (后续可能会加入 heartbeat 方法来保持基础服务的一些功能)
 
 存放于 `core/dependence` 目录下
 
