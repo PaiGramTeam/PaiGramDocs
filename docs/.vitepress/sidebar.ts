@@ -40,6 +40,7 @@ export default {
       collapsed: true,
       items: [
         { text: 'PGA 编译及安装', link: '/extra/pga' },
+        { text: 'GCSIM 开发备忘', link: '/extra/gcsim' },
       ],
     },
   ],

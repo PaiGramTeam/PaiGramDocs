@@ -15,7 +15,7 @@ PGA 主要依赖 Rust 以及 PyO3 实现与 `genshin_artifact` 的对接：
 
 [python-genshin-artifact](https://pypi.org/project/python-genshin-artifact/)
 
-```
+```bash
 pip install python-genshin-artifact
 ```
 
@@ -23,7 +23,7 @@ pip install python-genshin-artifact
 
 1. 克隆项目
 
-  ```
+  ```bash
   $ git clone https://github.com/PaiGramTeam/python-genshin-artifact.git
   Cloning into 'python-genshin-artifact'...
   ...
@@ -31,7 +31,7 @@ pip install python-genshin-artifact
 
 2. 浏览至项目主目录下，用 `cargo` 编译 Rust 代码 (可选步骤)
 
-  ```
+  ```bash
   $ cd python-genshin-artifact/
   $ cargo build --no-default-features
   ...
@@ -41,7 +41,7 @@ pip install python-genshin-artifact
 
 3. 编译成功后用 `pyo3/maturin` 安装至当前 Python 虚拟环境 (`env`)
 
-  ```
+  ```bash
   (env) $ maturin develop
      Compiling python_genshin_artifact v1.0.0
       Finished dev [unoptimized + debuginfo] target(s) in 18.06s
@@ -65,7 +65,7 @@ pip install python-genshin-artifact
 
 1. `maturin build`：
 
-  ```
+  ```bash
   $ maturin build --out dist
       Finished dev [unoptimized + debuginfo] target(s) in 0.12s
   📦 Built wheel for CPython 3.10 to dist/python_genshin_artifact-1.0.0-xxx.whl
@@ -73,7 +73,7 @@ pip install python-genshin-artifact
 
 2. 将上一步打包完成的 `.whl` 安装至另一个项目的虚拟环境中 (此处假定 PaiGram 用的虚拟环境名是 venv)
 
-  ```
+  ```bash
   (venv) $ pip install dist/python_genshin_artifact-1.0.0-xxx.whl
   ```
 
