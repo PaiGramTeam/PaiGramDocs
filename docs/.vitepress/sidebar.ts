@@ -36,10 +36,10 @@ export default {
       ],
     },
     {
-      text: '🪚 PGA 介绍',
+      text: '🪚 扩展介绍',
       collapsed: true,
       items: [
-        { text: '编译及安装', link: '/pga/build' },
+        { text: 'PGA 编译及安装', link: '/extra/pga' },
       ],
     },
   ],

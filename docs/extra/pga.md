@@ -11,8 +11,15 @@ PGA 主要依赖 Rust 以及 PyO3 实现与 `genshin_artifact` 的对接：
 - [PyO3](https://github.com/PyO3/pyo3)
 - [Python 3.8+](https://www.python.org/)
 
+## PYPI 安装
 
-## 编译/安装
+[python-genshin-artifact](https://pypi.org/project/python-genshin-artifact/)
+
+```
+pip install python-genshin-artifact
+```
+
+## 编译安装
 
 1. 克隆项目
 
@@ -52,7 +59,7 @@ PGA 主要依赖 Rust 以及 PyO3 实现与 `genshin_artifact` 的对接：
   ```
 
 
-## 编译 wheel
+### 编译 wheel
 
 如果需要导出给其它项目测试或使用（例如 PaiGram），需要通过 `maturin` 将模块编译成 `.whl` 格式以便其它 Python 虚拟环境安装。
 
