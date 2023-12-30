@@ -58,7 +58,7 @@ BOT_TOKEN="xxxxxxx"
 可选。`username` 来自 Telegram 用户信息界面；`user_id` 可通过 [Telegram@IDBot](https://t.me/username_to_id_bot) 获取。
 
 ```dotenv
-ADMINS=[{ "username": "", "user_id": -1 }]
+OWNER=777000
 ```
 
 ### 其他功能
@@ -76,7 +76,7 @@ ERROR_NOTIFICATION_CHAT_ID=chat_id
 可选。
 
 ```dotenv
-CHANNELS=[{ "name": "", "chat_id": 1}]
+CHANNELS=[-100xxx]
 ```
 
 #### 允许机器人邀请到其他群
